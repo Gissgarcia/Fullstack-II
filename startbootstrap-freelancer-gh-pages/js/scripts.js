@@ -52,3 +52,36 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita envío automático
+
+    // Obtener valores
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Validar campos vacíos
+    if (name === "" || email === "" || phone === "" || message === "") {
+      alert("Debe ingresar todos los datos antes de enviar.");
+      return;
+    }
+
+    // Validar email con regex básica
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Debe ingresar un email válido.");
+      return;
+    }
+
+    // Validar teléfono (solo dígitos y mínimo 8 caracteres)
+    const phoneRegex = /^[0-9]{8,15}$/;
+    if (!phoneRegex.test(phone)) {
+      alert("Debe ingresar un número de teléfono válido (8 a 15 dígitos).");
+      return;
+    }
+
+    // Si todo está OK
+    alert("Formulario enviado correctamente ");
+    // Aquí podrías hacer el envío real con fetch/AJAX
+  });

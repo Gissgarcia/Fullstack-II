@@ -136,8 +136,8 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Soy Otorrinolaringólogo especialista en rinoplastía y septoplastía en Santiago de Chile, con más de 700 pacientes atendidos en los últimos dos años. Estudié medicina en la Unversidad Centroccidental Lisandro Alvarado en Venezuela, Estado Lara, obteniendo el título de Médico Cirujano en el año 2012, para posteriormente lograr la especialización de Otorrinolaringólogo a finales del 2017 en la misma institución.Especializándome en Rinología y Cirugía Plástica Facial en el Instituto de Otorrinolaringología y Oftalmología de San Bernardino, Caracas hasta Diciembre del 2019.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Mi esfuerzo y el de mi equipo es esculpir narices armónicas, acorde a los rasgos faciales del paciente, tomamos en cuenta el estilo y forma que desea, guiándolos antes, durante y después de la cirugía, logrando mejorar la estética sin descuidar la funcionalidad, usando las más actuales técnicas, procedimientos y equipos dando como resultado pacientes con narices hermosas, saludables y funcionales.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Soy Otorrinolaringólogo, especialista en rinoplastía y septoplastía en Santiago de Chile, con más de 700 pacientes atendidos en los últimos dos años. Cursé medicina en la Universidad Centroccidental Lisandro Alvarado (Venezuela, Estado Lara), donde obtuve el título de Médico Cirujano en 2012. Posteriormente, realicé la especialización en Otorrinolaringología, culminada a finales de 2017 en la misma institución. Mi formación se complementó con una subespecialización en Rinología y Cirugía Plástica Facial en el Instituto de Otorrinolaringología y Oftalmología de San Bernardino, Caracas, hasta diciembre de 2019.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Junto a mi equipo, nos enfocamos en esculpir narices armónicas y acordes a los rasgos faciales de cada paciente, considerando siempre sus expectativas y acompañándolos antes, durante y después de la cirugía. Nuestro objetivo es mejorar la estética sin descuidar la funcionalidad, utilizando técnicas y equipos de vanguardia, lo que nos permite alcanzar resultados de narices hermosas, saludables y plenamente funcionales.</p></div>
                 </div>
                 <!-- About Section Button-->
                 
@@ -164,51 +164,33 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Nombre Completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Correo</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Correo requerido.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo no es valido.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Telefono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">El telefono es requerido.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requirido.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <form id="contactForm">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Ingresa tu nombre..." />
+                            <label for="name">Nombre Completo</label>
+                        </div>
+                        
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" />
+                            <label for="email">Correo</label>
+                        </div>
+                        
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" />
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
